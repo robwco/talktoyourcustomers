@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cool. Sent!</h1>
+
+<p>Here's a preview of the email you just sent. Check your inbox for replies.</p>
+
+<p>
+	<%= @email.subject %>
+  <%= @email.message %>
+</p>
+
+<%= link_to 'Edit', edit_email_path(@email) %> |
+<%= link_to 'Back', emails_path %>
